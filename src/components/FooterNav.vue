@@ -16,6 +16,7 @@ import CopyrightIcon from './icons/CopyrightIcon.vue'
 
 <style lang="css" scoped>
 .footer-main {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   width: 100vw;

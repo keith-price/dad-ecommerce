@@ -17,17 +17,16 @@ import ProductCard from '../components/ProductCard.vue'
 
 <style>
 main {
-  height: 100vh;
   display: flex;
 }
 
 .product-grid {
   max-width: 1200px;
-  margin: auto;
+  margin: 48px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 48px 0;
+  gap: 48px;
 }
 
 .card {
