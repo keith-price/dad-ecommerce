@@ -15,6 +15,7 @@
 
 <style lang="css" scoped>
 .card-container {
+  background-color: var(--color-background);
   width: 350px;
   height: 400px;
   border-radius: 8px;

@@ -36,5 +36,6 @@ main {
 
 .card:hover {
   transform: translateY(-1px);
+  box-shadow: var(--box-shadow-large);
 }
 </style>
