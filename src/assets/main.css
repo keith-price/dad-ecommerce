@@ -10,7 +10,7 @@
   --text-extra-light: #737373;
 
   /* main padding for container large screen */
-  --main-padding: 0 175px;
+  --page-width-large: 1300px;
   --border-radius-top: 8px 8px 0 0;
   --border-radius-bottom: 0 0 8px 8px;
 }

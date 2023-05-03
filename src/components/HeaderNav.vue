@@ -6,7 +6,7 @@ import CartIcon from './icons/CartIcon.vue'
 <template>
   <div class="nav-main">
     <div class="nav-contents">
-      <div class="nav-left">Eden Products</div>
+      <div class="nav-left">Eden</div>
       <div class="nav-right">
         <CartIcon class="cart-icon" />
         <RouterLink class="link contact" to="/about">Contact</RouterLink>
@@ -20,7 +20,7 @@ import CartIcon from './icons/CartIcon.vue'
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 78px;
   background-color: var(--main-emerald-500);
   box-shadow: var(--box-shadow-main);
@@ -28,7 +28,7 @@ import CartIcon from './icons/CartIcon.vue'
 }
 
 .nav-contents {
-  max-width: 1200px;
+  max-width: var(--page-width-large);
   display: flex;
   width: 100%;
   justify-content: space-between;

@@ -19,14 +19,14 @@ import CopyrightIcon from './icons/CopyrightIcon.vue'
   margin-top: auto;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 78px;
   background-color: var(--main-bg-gray-50);
   box-shadow: var(--box-shadow-main);
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: var(--page-width-large);
   flex: 1;
   height: 100%;
   display: flex;
