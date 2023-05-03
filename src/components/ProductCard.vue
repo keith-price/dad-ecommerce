@@ -1,14 +1,25 @@
-<script setup></script>
+<script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 
 <template>
   <div class="card-container">
-    <img src="../assets/images/pexels-juan-pablo-serrano-arenas-890669.jpg" alt="#" />
+    <img :src="product.productImage" alt="#" />
 
     <div class="product-details">
       <div class="product-name">
-        <p>Nice Table</p>
+        <p>{{ product.productName }}</p>
       </div>
-      <div class="product-price"><p>&#163;19.99</p></div>
+      <div class="product-price">
+        <p>&#163;{{ product.productPrice }}</p>
+      </div>
     </div>
   </div>
 </template>

@@ -1,16 +1,14 @@
 <script setup>
 import ProductCard from '../components/ProductCard.vue'
+import products from '../data/products'
 </script>
 
 <template>
   <main>
     <div class="product-grid">
-      <ProductCard class="card" />
-      <ProductCard class="card" />
-      <ProductCard class="card" />
-      <ProductCard class="card" />
-      <ProductCard class="card" />
-      <ProductCard class="card" />
+      <div v-for="(product, index) in products" :key="index">
+        <ProductCard class="card" :product="product" />
+      </div>
     </div>
   </main>
 </template>
@@ -31,10 +29,11 @@ main {
 
 .card {
   box-shadow: var(--box-shadow-main);
+  transition: all 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   box-shadow: var(--box-shadow-large);
 }
 </style>
