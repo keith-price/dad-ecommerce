@@ -29,3 +29,5 @@ coverage
 
 # Local Netlify folder
 .netlify
+
+# TODO: need to add .env to git ignore?

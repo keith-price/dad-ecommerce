@@ -11,14 +11,14 @@ export default {
 
 <template>
   <div class="card-container">
-    <img :src="product.productImage" alt="#" />
+    <img :src="product.images[0]" alt="#" />
 
     <div class="product-details">
       <div class="product-name">
-        <p>{{ product.productName }}</p>
+        <p>{{ product.name }}</p>
       </div>
       <div class="product-price">
-        <p>&#163;{{ product.productPrice }}</p>
+        <p>&#163;{{ (product.prices[0].unit_amount / 100).toFixed(2) }}</p>
       </div>
     </div>
   </div>
@@ -31,13 +31,18 @@ export default {
   height: 400px;
   border-radius: 8px;
   display: flex;
+  align-items: stretch;
   flex-direction: column;
+}
+
+.card-container > * {
+  flex-grow: 1;
 }
 
 /* image needs to resize properly and not just stretch */
 img {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   border-radius: var(--border-radius-top);
 }
 
