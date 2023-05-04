@@ -31,3 +31,4 @@ coverage
 .netlify
 
 # TODO: need to add .env to git ignore?
+.env
