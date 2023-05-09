@@ -2,6 +2,16 @@
 import { onMounted, computed, ref } from 'vue'
 import axios from 'axios'
 import ProductCard from '../components/ProductCard.vue'
+import { useProductStore } from '../stores/product-store'
+import router from '../router/index'
+
+const productStore = useProductStore()
+
+const onClickHandler = (product) => {
+  productStore.setProduct(product)
+  router.push({ name: 'product-details' })
+  console.log(product.name)
+}
 
 let products = ref([])
 
@@ -22,7 +32,7 @@ const activeProducts = computed(() => {
     </div>
     <div class="product-grid">
       <div v-for="(product, index) in activeProducts" :key="index">
-        <ProductCard class="card" :product="product" />
+        <ProductCard class="card" :product="product" @click.prevent="onClickHandler(product)" />
       </div>
     </div>
   </main>
