@@ -35,6 +35,10 @@ export default {
   flex-direction: column;
 }
 
+.card-container:hover {
+  cursor: pointer;
+}
+
 .card-container > * {
   flex-grow: 1;
 }
