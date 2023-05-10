@@ -66,7 +66,7 @@ main {
 }
 
 .container {
-  margin-top: 192px;
+  margin: 192px 0;
   display: flex;
   flex-direction: column;
 }
