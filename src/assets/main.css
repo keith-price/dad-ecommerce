@@ -13,6 +13,10 @@
   --page-width-large: 1300px;
   --border-radius-top: 8px 8px 0 0;
   --border-radius-bottom: 0 0 8px 8px;
+  --border-radius-full: 8px;
+
+  /* margin-botton product detail page */
+  --margin-bottom: 28px;
 }
 
 *,
@@ -25,11 +29,11 @@
 }
 
 body {
-  min-height: 100vh;
+  height: min-100vh;
   color: var(--color-text);
   background: var(--color-background);
   overflow-x: hidden;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;

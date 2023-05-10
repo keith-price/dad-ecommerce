@@ -4,6 +4,7 @@ import axios from 'axios'
 import ProductCard from '../components/ProductCard.vue'
 import { useProductStore } from '../stores/product-store'
 import router from '../router/index'
+import LoadingIcon from '../components/icons/LoadingIcon.vue'
 
 const productStore = useProductStore()
 
@@ -27,7 +28,10 @@ const activeProducts = computed(() => {
 
 <template>
   <main>
-    <div class="page-heading">
+    <div v-if="!products.length" class="loading">
+      <LoadingIcon class="loading-icon" />
+    </div>
+    <div v-else class="page-heading">
       <h1>Our Products</h1>
     </div>
     <div class="product-grid">
@@ -40,10 +44,19 @@ const activeProducts = computed(() => {
 
 <style>
 main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   max-width: var(--page-width-large);
   margin: 0 auto;
+}
+
+.loading {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .page-heading {

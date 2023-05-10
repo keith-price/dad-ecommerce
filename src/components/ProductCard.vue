@@ -27,8 +27,8 @@ export default {
 <style lang="css" scoped>
 .card-container {
   background-color: var(--color-background);
-  width: 375px;
-  height: 400px;
+  width: 400px;
+  height: 275px;
   border-radius: 8px;
   display: flex;
   align-items: stretch;
