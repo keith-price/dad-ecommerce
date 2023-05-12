@@ -70,4 +70,11 @@ img {
   font-weight: bold;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 880px) {
+  .card-container {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>

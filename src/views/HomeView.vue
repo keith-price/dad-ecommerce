@@ -49,6 +49,7 @@ main {
   flex-direction: column;
   max-width: var(--page-width-large);
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 .loading {
@@ -85,5 +86,34 @@ main {
 .card:hover {
   transform: translateY(-2px);
   box-shadow: var(--box-shadow-large);
+}
+
+/* breakpoint 1360px (this is where the content starts to look squashed) */
+@media only screen and (max-width: 1360px) {
+  main {
+    max-width: var(--page-width-medium);
+  }
+
+  .product-grid {
+    margin: 12px auto auto;
+    justify-content: space-between;
+    gap: 96px 0;
+  }
+}
+
+/* breakpoint px (this is where the content starts to look squashed) */
+@media only screen and (max-width: 880px) {
+  main {
+    max-width: var(--page-width-small);
+
+    align-items: center;
+  }
+
+  .product-grid {
+    margin: 12px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
 }
 </style>

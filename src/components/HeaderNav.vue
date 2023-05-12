@@ -32,6 +32,7 @@ import CartIcon from './icons/CartIcon.vue'
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding: 0 12px;
 }
 
 .nav-right {
@@ -57,5 +58,17 @@ import CartIcon from './icons/CartIcon.vue'
   font-weight: 500;
   font-size: 1.5rem;
   margin-left: 24px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .nav-contents {
+    max-width: var(--page-width-medium);
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .nav-contents {
+    max-width: var(--page-width-small);
+  }
 }
 </style>

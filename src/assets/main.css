@@ -11,6 +11,8 @@
 
   /* main padding for container large screen */
   --page-width-large: 1300px;
+  --page-width-medium: 900px;
+  --page-width-small: 800px;
   --border-radius-top: 8px 8px 0 0;
   --border-radius-bottom: 0 0 8px 8px;
   --border-radius-full: 8px;
